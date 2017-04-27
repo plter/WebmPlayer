@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WebmPlayer</title>
+
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #overlay {
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+    </style>
+
+</head>
+<body>
+<video controls="controls" id="videoPlayer" autoplay="autoplay"></video>
+<div id="overlay"><div id="statusBar"></div></div>
+</body>
+
+<script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+</script>
+</html>
